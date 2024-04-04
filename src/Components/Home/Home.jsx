@@ -32,7 +32,7 @@ const Home = () => {
     fetchAppointments();
   }, []);
 
-  console.log(appointments);
+  // console.log(appointments);
 
   const handleClick = () => {
     setPopup(!popup);
@@ -48,7 +48,17 @@ const Home = () => {
             <button onClick={handleClick}>Add Appointment</button>
           </div>
           <div className="content">
-            {loading ? <h1>Loading...</h1> : <Item />}
+            {loading ? (
+              <h1>Loading...</h1>
+            ) : (
+              <>
+                <Item />
+                <Item />
+                <Item />
+                <Item />
+                <Item />
+              </>
+            )}
             <button>Load more...</button>
           </div>
         </div>

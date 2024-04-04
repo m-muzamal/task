@@ -1,30 +1,21 @@
 import { TextField } from "@mui/material";
-import React, { useEffect } from "react";
+import React from "react";
 
 const AddAppointment = ({ handleClose }) => {
   return (
     <section className="add_appointment">
       <div className="add_content">
         <h1>Add Appointment</h1>
-        <div className="form">
-          <TextField
-            label="Somthing"
-            size="small"
-            variant="outlined"
-            required
-          />
-          <TextField
-            label="Somthing"
-            size="small"
-            variant="outlined"
-            required
-          />
+        <form className="form">
+          <TextField label="Data" size="small" variant="outlined" required />
+          <TextField label="Data2" size="small" variant="outlined" required />
           <div className="btns">
+            <button type="submit">Submit</button>
             <button type="button" className="btn" onClick={handleClose}>
               Cancel
             </button>
           </div>
-        </div>
+        </form>
       </div>
     </section>
   );
