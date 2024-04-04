@@ -54,7 +54,6 @@ button {
   width: fit-content;
   align-self: center;
 }
-
 button:hover {
   background-color: #444444;
 }
@@ -63,7 +62,6 @@ a {
   color: white;
   font-size: 16px;
 }
-
 a:hover {
   color: gray;
 }
@@ -116,6 +114,7 @@ svg {
   height: 100%;
   width: 100%;
 }
+
 /* ------------------------Home)-------------------------------- */
 
 .home {
@@ -135,7 +134,6 @@ svg {
 .content {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   gap: 1rem;
 }
 
@@ -146,6 +144,9 @@ article {
   border: 1px solid var(--color-light);
   border-radius: 10px;
   padding: 1rem;
+}
+article:hover {
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 /* ------------------------add-appointment)-------------------------------- */
@@ -165,6 +166,7 @@ article {
   border-radius: 1rem;
   border: 1px solid var(--color-light);
   gap: 2rem;
+  width: 400px;
 }
 
 .form {
@@ -202,5 +204,10 @@ article {
 
   .icon {
     display: block;
+  }
+
+  .add_content {
+    width: 100%;
+    margin: 1rem;
   }
 }
