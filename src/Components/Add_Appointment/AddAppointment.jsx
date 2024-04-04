@@ -48,8 +48,18 @@ const AddAppointment = ({ handleClose }) => {
       <div className="add_content">
         <h1>Add Appointment</h1>
         <div className="form">
-          <TextField label="Name" size="small" variant="outlined" required />
-          <TextField label="Email" size="small" variant="outlined" required />
+          <TextField
+            label="Somthing"
+            size="small"
+            variant="outlined"
+            required
+          />
+          <TextField
+            label="Somthing"
+            size="small"
+            variant="outlined"
+            required
+          />
           <div className="btns">
             <button type="button" className="btn" onClick={handleClose}>
               Cancel
