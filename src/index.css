@@ -71,6 +71,22 @@ h1 {
 }
 
 /* ------------------------NavBar)-------------------------------- */
+.try {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+dialog {
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border-radius: 5px;
+}
+
 nav {
   display: flex;
   position: fixed;
@@ -189,6 +205,36 @@ article:hover {
   justify-content: space-evenly;
 }
 
+.dictionary {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  /* border: 2px solid red; */
+}
+
+.dictionary > h1 {
+  align-self: center;
+  margin-bottom: 1rem;
+}
+
+input {
+  border-radius: 5px;
+  border: 2px solid black;
+  font-size: 15px;
+  padding: 5px;
+  margin-right: 1rem;
+  width: 80%;
+  margin-bottom: 1rem;
+}
+strong {
+  color: #5e32fd;
+}
+.txt {
+  align-self: center;
+}
+.err {
+  color: #fd3232;
+}
 /* ------------------------media-quries)-------------------------------- */
 
 @media (max-width: 768px) {
