@@ -28,8 +28,8 @@ const Dictionary = () => {
 
   return (
     <section>
-      <div className="dictionary">
-        <h1>Dictionary App</h1>
+      <div className="dictionary card">
+        <h1>Dictionary</h1>
         <form onSubmit={handleSubmit}>
           <input
             type="text"
